@@ -1,5 +1,5 @@
 var MainCtrl = function ($scope, Posts){
-  $scope.title = "Totally Not the Same as Tumblr";
+  $scope.title = "totally not tumblr.";
 
   Posts.query(function(results){
     $scope.posts = results;
