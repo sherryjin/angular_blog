@@ -1,1 +1,1 @@
-var mainApp = angular.module('Main', ['ui.bootstrap']);
+var mainApp = angular.module('Main', ['ngResource', 'ui.bootstrap']);

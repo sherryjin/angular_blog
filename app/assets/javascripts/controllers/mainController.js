@@ -1,5 +1,9 @@
-var MainCtrl = function ($scope){
-  $scope.title = "Totally Not the Same as Tumblr"
+var MainCtrl = function ($scope, Posts){
+  $scope.title = "Totally Not the Same as Tumblr";
+
+  Posts.query(function(results){
+    $scope.posts = results;
+  });
 }
 
-mainApp.controller('MainCtrl', ['$scope', MainCtrl])
+mainApp.controller('MainCtrl', ['$scope', 'Posts', MainCtrl])
